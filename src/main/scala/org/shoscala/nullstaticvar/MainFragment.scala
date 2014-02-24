@@ -1,18 +1,16 @@
 package org.shoscala.nullstaticvar
 
 import android.app.Fragment
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view._
 import org.scaloid.common._
-import com.shoscala.nullstaticvar.R
 
 object MainFragment {
 
   Log.d("NullStaticVarFragment","initalize ImageFragment object")
 
-  var int :Int = _
+  var text :String = _
 }
 
 class MainFragment extends Fragment {
@@ -26,12 +24,12 @@ class MainFragment extends Fragment {
   override def onViewCreated(view: View, savedInstanceState: Bundle): Unit = {
 
     view.findViewById(R.id.initialize).onClick {
-      MainFragment.int = Int.MaxValue
-      toast("Initalize MainFragment.int")
+      MainFragment.text = "Hello"
+      toast("Initalize MainFragment.text")
     }
 
     view.findViewById(R.id.check_static_number).onClick{
-      toast("MainFragment.int:" + MainFragment.int)
+      toast("MainFragment.text:" + MainFragment.text)
     }
   }
 }

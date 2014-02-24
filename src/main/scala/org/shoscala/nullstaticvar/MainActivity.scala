@@ -2,7 +2,6 @@ package org.shoscala.nullstaticvar
 
 import android.os.Bundle
 import android.app.Activity
-import com.shoscala.nullstaticvar.R
 
 class MainActivity extends Activity {
 
