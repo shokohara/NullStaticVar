@@ -1,4 +1,4 @@
-package com.shoscala.nullstaticvar
+package org.shoscala.nullstaticvar
 
 import android.app.Fragment
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view._
 import org.scaloid.common._
+import com.shoscala.nullstaticvar.R
 
 object MainFragment {
 
@@ -31,10 +32,6 @@ class MainFragment extends Fragment {
 
     view.findViewById(R.id.check_static_number).onClick{
       toast("MainFragment.int:" + MainFragment.int)
-    }
-
-    view.findViewById(R.id.launch_another_activity).onClick {
-      startActivity(new Intent().setType("image/*"))
     }
   }
 }

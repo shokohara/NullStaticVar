@@ -2,8 +2,7 @@
 
 <resources>
     <string name="app_name">NullStaticVar</string>
-    <string name="how_to_use">再現手順まとめ\n1.static変数に値を代入する\n2.別のActivityに遷移する\n3.ホームボタンを押してアプリ中断\n4.DDMSでorg.shoscala.nullstaticvarプロセスをSTOP\n5.別Activityからorg.shoscala.nullstaticvar.MainActivityに戻る\n6.static変数の中身を確認する</string>
+    <string name="how_to_use">再現手順まとめ\n1.static変数に値を代入する\n2.ホームボタンを押してアプリ中断\n3.org.shoscala.nullstaticvarプロセス殺す\n->adb shell am force-stop org.shoscala.nullstaticvar\n4.org.shoscala.nullstaticvar.MainActivityに戻る\n5.static変数の中身を確認する</string>
     <string name="initialize">Initalize static number</string>
     <string name="check_static_number">Check static number</string>
-    <string name="launch_another_activity">Launch another activity</string>
 </resources>
